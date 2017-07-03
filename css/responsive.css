@@ -1,0 +1,24 @@
+/*!
+* Author: Łukasz Holeczek
+* Template: FreeME - HTML5 Responsive Bootstrap Theme
+* Version: 1.0.0 
+* Bootstrap version: 2.1.1
+* Copyright 2013 creativeLabs
+* www: http://bootstrapmaster.com
+* mail: lukasz@bootstrapmaster.com
+* You can dowload this theme on WrapBootstrap: http://bootstrapmaster.com
+* You can find our other themes on: http://bootstrapmaster.com
+*/
+
+
+/* Import Section
+=================================================================== */
+@import url("icons.css");				/* Icons. */
+@import url("icons-color.css");			/* Icons. */  
+@import url("social-icons.css");		/* Social Icons */
+@import url("hover.css");				/* Hover CSS3 Effect */
+
+.clear {
+	clear:both;
+}
+

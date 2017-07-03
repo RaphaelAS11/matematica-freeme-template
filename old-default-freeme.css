@@ -8,9 +8,6 @@
 * mail: lukasz@bootstrapmaster.com
 * You can dowload this theme on WrapBootstrap: http://bootstrapmaster.com
 * You can find our other themes on: http://bootstrapmaster.com
-
-** Adapted by: Raphael da Silva
-** Mail: raphael.006@gmail.com;
 */
 
 
@@ -36,7 +33,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: "Boogaloo" !important;
 	font-weight: normal;
 	color: #666;
-	margin: 10px 0px 0px 0px;
 }
 
 .title {
@@ -84,10 +80,8 @@ header {
 	background: #fff;
 }
 
-
 .logo img {
-	margin-top:10px;
-
+	margin-top:15px;
 }
 
 #social-links {
@@ -97,18 +91,9 @@ header {
 
 .navbar, 
 .navbar-inner, 
-.navbar-inverse,
 .nav {
-	/*background: #333 !important;*/
+	background: #333 !important;
 }
-
-.navbar-inverse{
-	padding-top: 40px;
-}
-.navbar .brand{
-	width: 100px;
-	
-	}
 
 .navbar .nav > li > a {
   color: #eee;
@@ -117,7 +102,7 @@ header {
 
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
-  background-color: #B2C7DD !important;	
+  background-color: #89c236 !important;	
   color: #fff;
 }
 
@@ -125,7 +110,7 @@ header {
 .navbar .nav > .active > a:focus {
   color: #fff;
   text-decoration: none;
-  background-color: #B2C7DD !important;	
+  background-color: #89c236 !important;	
   -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
      -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
           box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
@@ -135,13 +120,13 @@ header {
 .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a {
   color: #ffffff;
-  background: #B2C7DD !important;	
+  background: #89c236 !important;	
 }
 
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
   color: #ffffff;
-  background: #B2C7DD !important;	
+  background: #89c236 !important;	
 }
 
 
@@ -785,6 +770,137 @@ html[xmlns] .slides {display: block;}
    transition: all 0.2s ease-in-out;
 }
 
+/* Pricing Tables
+=================================================================== */
+.five-tables .pricing-table {
+	width: 187px;
+}
+	
+.four-tables .pricing-table {
+	width: 234px;
+}
+	
+.three-tables .pricing-table {
+	width: 312px;
+}
+
+.two-tables .pricing-table {
+	width: 469px;
+}
+
+.pricing-table {
+	float: left;
+	margin: 1px 0 0 1px;
+}
+
+.pricing-table h3 {
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+	padding: 6px 0;
+	margin: 0;
+}
+
+.pricing-table li {
+	color: #888;
+	background: #fff;
+	text-align: center;
+	padding: 11px 0;
+	border-bottom: 1px solid #fff;
+}
+
+.pricing-table li:nth-child(2n) {
+	background: #f6f6f6;
+}
+	
+.pricing-table h4 {
+	padding:0 0 10px
+}
+
+a.buy {
+	text-align: center;
+	display: block;
+	color: #fff;
+	padding: 12px 0;
+	font-weight: bold;
+	font-size: 14px;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+}
+
+a.buy:hover {
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+}
+
+/* Table
+=================================================================== */
+.pricing-table h3,
+.pricing-table h4 {
+	color: #fff;
+	margin: 0;
+}
+
+.pricing-table h4 {
+	padding: 15px 0;
+}
+
+.price,
+.time {
+	display: block;
+	text-align: center;
+	line-height: 24px;
+}
+
+.price {
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.time {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+/* Color Schemes
+=================================================================== */
+
+/* Color - 1 */
+.pricing-table .color-cccddd h3, .color-cccddd .buy {background-color: #ccc;}
+.pricing-table .color-cccddd h4 {background-color: #ddd;}
+
+/* Color - 2 */
+.pricing-table .color-666777 h3, .color-666777 .buy {background-color: #666;}
+.pricing-table .color-666777 h4 {background-color: #777;}
+
+/* Color - 3 */
+.pricing-table .color-custom h3, .color-custom .buy {background-color: #111; padding: 15px 0;}
+.pricing-table .color-custom h4 {background-color: #222; padding: 35px 0;}
+
+.color-custom {
+	margin-top:-57px;
+	-webkit-box-shadow: 0px 2px 5px rgba(0,0,0,.5);
+    box-shadow: 0px 2px 5px rgba(0,0,0,.5);
+}
+
+.pricing-table {
+	position: relative !important;
+	z-index: 5 !important;
+	margin: 60px 0px;
+}
+
+.pricing-table.best-option {
+	position: relative !important;
+	z-index: 6 !important;
+}
+
+.pricing-table .color-custom h3, .color-custom .buy {background-color: #80a859;}
+.pricing-table .color-custom h4 {background-color: #89c236;}
+
+
 /* Google Map
 =================================================================== */
 #google-map {
@@ -806,8 +922,7 @@ html[xmlns] .slides {display: block;}
 }
 
 #footer-menu-logo img {
-	margin-top: 10px;
-	max-height: 40px!important;
+	margin-top: 16px;
 }
 
 #footer-menu-links {
@@ -1024,15 +1139,16 @@ form#newsletter input[type=submit] {
 .ie7 .flickr-widget a {width: 54px; height: 54px;}
 
 
+
 /* Higher than 960 (desktop devices)
 ====================================================================== */
 @media only screen and (min-width: 960px) {
 	
 	#wrapper {
 		width: 1000px;
-		margin: 20px auto; 
-		}
-
+		margin: 20px auto;
+	}
+	
 	#footer-menu {
 		padding-left: 30px;
 		padding-right: 30px;
@@ -1051,125 +1167,25 @@ form#newsletter input[type=submit] {
 		min-height: 300px;
 	}
 
-	.navbar .brand-text{
-	width: 280px;
-	padding-top:20px;
-	padding-left: -10px;
-	padding-right: -10px; 
-}
-	.social-small-grid{
-		width: 160px!important;
-	}
-
 }
 
-/*/* Tablet Portrait (devices and browsers)
+/* Tablet Portrait (devices and browsers)
 ====================================================================== */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-		#wrapper {
-			width: 760px;
-			margin: 10px auto; 
-			}
-			
-		#footer-menu {
-			padding-left: 20px;
-			padding-right: 20px;
-			margin-left: -20px;
-			margin-right: -20px;
-		}
-		
-		#footer {
-			padding-left: 20px;
-			padding-right: 20px;
-			margin-left: -20px;
-			margin-right: -20px;
-		}
-		
-		.flexslider.home {
-			min-height: 300px;
-		}
-			.navbar .brand{
-				width: 100px!important;
-				
-		}
-		.navbar .brand-text{
-			width: 200px!important;
-			padding:10px!important; 
-		}
-
-
+	
+	
+	
 }
 
+/* All Mobile Sizes (devices and browser)
+====================================================================== */
+@media only screen and (max-width: 767px) {}
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers)
 ====================================================================== */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-		#wrapper {
-			width: 470px;
-			margin: 10px auto; 
-			}
-			
-		#footer-menu {
-			padding-left: 10px;
-			padding-right: 10px;
-			margin-left: -10px;
-			margin-right: -10px;
-		}
-		
-		#footer {
-			padding-left: 10px;
-			padding-right: 10px;
-			margin-left: -10px;
-			margin-right: -10px;
-		}
-		
-		.flexslider.home {
-			min-height: 300px;
-		}
-		.navbar .brand{
-			width: 50px;
-			
-			}
-		.navbar .brand-text{
-			width: 100px;
-			padding:5px; 
-		}
-
-
-}
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers)
 =================================================================== */
-@media only screen and (max-width: 479px) {
-			#wrapper {
-			width: 425px;
-			margin: 0!important; 
-			}
-			
-		#footer-menu {
-			padding-left: 10px;
-			padding-right: 10px;
-/*			margin-left: -10px;
-			margin-right: -10px;
-*/		}
-		
-		#footer {
-			padding-left: 10px;
-			padding-right: 10px;
-/*			margin-left: -10px;
-			margin-right: -10px;*/
-		}
-		
-		.flexslider.home {
-			min-height: 300px;
-		}
-		.navbar .brand{
-			width: 50px;
-			
-			}
-		.navbar .brand-text{
-			width: 100px;
-			padding:5px; 
-		}
-
-}
+@media only screen and (max-width: 479px) {}
+	
