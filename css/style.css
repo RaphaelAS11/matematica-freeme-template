@@ -70,13 +70,19 @@ h1, h2, h3, h4, h5, h6 {
 	margin-right:15px !important;
 }
 .about-list{
-	height: 1000px;
+	height: 150px;
 }
 .about-list h3, .about-list h4{
 	font-family: "Droid Sans" !important;
 	font-weight: normal;
 	color: #00458E;
 	margin: 10px 0px 0px 0px;
+}
+
+.indice h5, .indice h4{
+	font-family: "Droid Sans" !important;
+	font-weight: bold!important;
+	color:#00458E!important;
 }
 
 #wrapper {
@@ -1166,7 +1172,7 @@ form#newsletter input[type=submit] {
 			width: 470px;
 			margin: 10px auto; 
 			}
-			
+
 		#footer-menu {
 			padding-left: 10px;
 			padding-right: 10px;
@@ -1202,10 +1208,6 @@ form#newsletter input[type=submit] {
 		#wrapper {
 		width: 425px;
 		margin: 0!important; 
-		}
-	
-		.about-list{
-		height: 150px;
 		}
 	
 			
