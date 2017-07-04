@@ -11,6 +11,13 @@
 
 ** Adapted by: Raphael da Silva
 ** Mail: raphael.006@gmail.com;
+
+* Cores
+* azul menu old: #487d7d;
+* azul menu new: #6C9797;
+* azul uff: #00458E;
+* roxo complementar: #6F346F;
+* azul banner: #7EA4A4;
 */
 
 
@@ -25,6 +32,13 @@
 	clear:both;
 }
 
+@font-face {
+    font-family: 'Boogaloo';
+    src: url('fonts/Boogaloo-Regular.eot'), url('fonts/Boogaloo-Regular.ttf') format('truetype'), url('fonts/Boogaloo-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
 	background: url(../img/bg-repeat.jpg);
 	font-family: 'Droid Sans';
@@ -32,10 +46,13 @@ body {
 	color: #666;
 }
 
+p{
+	text-align: justify;
+}
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Boogaloo" !important;
 	font-weight: normal;
-	color: #666;
+	color: #00458E;
 	margin: 10px 0px 0px 0px;
 }
 
@@ -52,12 +69,53 @@ h1, h2, h3, h4, h5, h6 {
 	margin-left:15px !important;
 	margin-right:15px !important;
 }
+.about-list{
+	height: 1000px;
+}
+.about-list h3, .about-list h4{
+	font-family: "Droid Sans" !important;
+	font-weight: normal;
+	color: #00458E;
+	margin: 10px 0px 0px 0px;
+}
 
 #wrapper {
 	background: #fff;
 	-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,.25);
 	   -moz-box-shadow: 0px 1px 1px rgba(0,0,0,.25);
 		    box-shadow: 0px 1px 1px rgba(0,0,0,.25);
+}
+
+.navbar-inverse .btn-navbar {
+  color: #00458E;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #00458E;
+  *background-color: #00458E;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00458E), to(#040404));
+  background-image: -webkit-linear-gradient(top, #00458E, #00458E);
+  background-image: -o-linear-gradient(top, #00458E, #00458E);
+  background-image: linear-gradient(to bottom, #00458E, #00458E);
+  background-image: -moz-linear-gradient(top, #00458E, #00458E);
+  background-repeat: repeat-x;
+  border-color: #00458E #00458E #00458E;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff151515', endColorstr='#ff040404', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.navbar-inverse .btn-navbar:hover,
+.navbar-inverse .btn-navbar:active,
+.navbar-inverse .btn-navbar.active,
+.navbar-inverse .btn-navbar.disabled,
+.navbar-inverse .btn-navbar[disabled] {
+  color: #00458E;
+  background-color: #00458E;
+  *background-color: #00458E;
+}
+
+.navbar-inverse .btn-navbar:active,
+.navbar-inverse .btn-navbar.active {
+  background-color: #000000 \9;
 }
 
 /* #Lists
@@ -1141,10 +1199,15 @@ form#newsletter input[type=submit] {
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers)
 =================================================================== */
 @media only screen and (max-width: 479px) {
-			#wrapper {
-			width: 425px;
-			margin: 0!important; 
-			}
+		#wrapper {
+		width: 425px;
+		margin: 0!important; 
+		}
+	
+		.about-list{
+		height: 150px;
+		}
+	
 			
 		#footer-menu {
 			padding-left: 10px;
